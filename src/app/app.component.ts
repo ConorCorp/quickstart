@@ -4,10 +4,7 @@ export class Hero {
   id: number;
   name: string;
 }
-hero: Hero = {
-  id: 1;
-  name: 'Windstrom';
-}
+
 @Component({
   selector: 'my-app',
   template:`
@@ -21,5 +18,9 @@ hero: Hero = {
 })
 export class AppComponent  {
   title = "Tour of Heros";
-  hero = Hero;
+
+    hero: Hero = {
+      id: 1,
+      name: 'Windstrom'
+    };
   }
